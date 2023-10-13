@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Skranji&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <p class="title">Pomodoro Timer</p>
+    <div class="container">
+      <div class="section-container">
+        <button class="btn btn-timer btn-focus" id="focus">Pomodoro</button>
+        <button class="btn btn-shortbreak" id="shortbreak">Short Break</button>
+        <button class="btn btn-longbreak" id="longbreak">Long Break</button>
+      </div>
+      <div class="time-btn-container">
+        <span id="time"></span>
+        <div class="btn-container">
+          <button class="show" id="btn-start">
+            <img class="icon" src="images/start.png" />
+          </button>
+          <button class="hide" id="btn-pause">
+            <img class="icon" src="images/stop.png" />
+          </button>
+          <button class="hide" id="btn-reset">
+            <img class="icon" src="images/reset.png" />
+          </button>
+        </div>
+      </div>
+      <div id="cycle-indicator"></div>
+    </div>
+    <audio id="timerSound">
+      <source src="haki alert.mp3" type="audio/mpeg" />
+    </audio>
+    <script src="script.js"></script>
+  </body>
+</html>
